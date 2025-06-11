@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 import Container from "../Container/Container";
@@ -8,8 +9,31 @@ const addActive = ({ isActive }) => {
 };
 
 const Header = () => {
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+  const prevScrollY = useRef(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > prevScrollY.current && currentScrollY > 100) {
+      setIsScrollingDown(true);
+    } else if (currentScrollY < prevScrollY.current) {
+      setIsScrollingDown(false);
+    }
+
+    prevScrollY.current = currentScrollY;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={css.header}>
+    <header className={`${css.header} ${isScrollingDown ? css.hidden : ""}`}>
       <Container>
         <nav className={css.nav}>
           <ul className={css.list}>

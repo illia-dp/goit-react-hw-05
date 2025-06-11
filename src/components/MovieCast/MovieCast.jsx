@@ -33,7 +33,7 @@ const MovieCast = () => {
       ) : (
         <Heading
           variant={"error"}
-          title={`We don't have any reviews for this movie`}
+          title={`We don't have any casts for this movie`}
         />
       )}
       {loading && <Loader />}

@@ -16,3 +16,7 @@
   height: 40px;
   transition: background-color var(--animation);
 }
+
+.page-wrapper {
+  padding-top: 72px;
+}
