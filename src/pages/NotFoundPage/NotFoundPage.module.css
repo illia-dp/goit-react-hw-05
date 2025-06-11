@@ -1,0 +1,21 @@
+.title {
+  font-size: 120px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.text {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.button {
+  composes: button from "../../App.css";
+  margin: 0 auto;
+}
+
+.button:hover,
+.button:active {
+  background-color: var(--hover-color);
+}

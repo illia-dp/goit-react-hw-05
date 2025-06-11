@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 400px;
+}
+
+.link {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: var(--animation);
+}
+
+.link:hover {
+  color: var(--hover-color);
+}

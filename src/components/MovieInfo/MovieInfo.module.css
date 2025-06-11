@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.image {
+  width: 300px;
+  height: 100%;
+}
+
+.information {
+  padding: 12px 12px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.text {
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  margin-bottom: 18px;
+}
+
+.genres {
+  display: flex;
+  gap: 16px;
+}

@@ -1,0 +1,44 @@
+.title {
+  font-size: var(--font-large);
+  font-weight: 700;
+  color: var(--color-dark);
+
+  text-align: center;
+
+  position: relative;
+
+  &:after {
+    display: block;
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translateX(-50%);
+
+    width: 50%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--color-gray);
+  }
+}
+
+.bottom {
+  margin-bottom: 30px;
+}
+
+.top {
+  margin-top: 30px;
+}
+
+.error {
+  color: var(--accent-color);
+}
+
+.success {
+  color: var(--success-color);
+}
+
+.info {
+  color: var(--info-color);
+}

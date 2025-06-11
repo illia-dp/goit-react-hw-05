@@ -1,0 +1,18 @@
+.link {
+  composes: button from "../../App.css";
+  margin-bottom: 32px;
+}
+
+.link:hover,
+.link:active {
+  background-color: var(--hover-color);
+}
+
+.infoTitle {
+  margin-bottom: 12px;
+}
+
+.linksList {
+  display: flex;
+  gap: 8px;
+}

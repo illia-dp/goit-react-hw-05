@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  gap: 8px;
+}
+
+.link {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 18px 12px;
+  color: var(--text-color);
+  transition: color var(--animation);
+}
+
+.active {
+  color: var(--accent-color);
+}
+
+.link:hover {
+  color: var(--hover-color);
+}
