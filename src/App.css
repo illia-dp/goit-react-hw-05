@@ -18,5 +18,5 @@
 }
 
 .page-wrapper {
-  padding-top: 72px;
+  padding-top: var(--header-height);
 }
