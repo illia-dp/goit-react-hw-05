@@ -12,6 +12,15 @@
   border-radius: 8px;
   padding: 6px 12px;
   width: 300px;
+  transition: border-color var(--animation);
+}
+
+.input:hover {
+  border-color: var(--hover-color);
+}
+
+input:focus {
+  border-color: var(--accent-color);
 }
 
 .button {
